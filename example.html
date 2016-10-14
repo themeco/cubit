@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Media Queries Iframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+      /* Normalize
+      // ------ */
+
+      * {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+
+      html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+
+      /* <code>
+      // --- */
+
+      code {
+        position: fixed;
+        border-radius: 3px;
+        padding: 0.575em 0.675em;
+        font-family: monospace;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+      }
+
+      code span {
+        color: #fff;
+      }
+
+      code span:before {
+        display: inline;
+      }
+
+      .xs code { color: #e74c3c; }
+      .sm code { color: #e67e22; }
+      .md code { color: #f1c40f; }
+      .lg code { color: #2ecc71; }
+      .xl code { color: #3498db; }
+
+      .xs code:not(.vp-width) span:last-of-type:before { content: "#e74c3c"; }
+      .sm code:not(.vp-width) span:last-of-type:before { content: "#e67e22"; }
+      .md code:not(.vp-width) span:last-of-type:before { content: "#f1c40f"; }
+      .lg code:not(.vp-width) span:last-of-type:before { content: "#2ecc71"; }
+      .xl code:not(.vp-width) span:last-of-type:before { content: "#3498db"; }
+
+      .xs code:not(.vp-width) span:first-of-type:before { content: "xs"; }
+      .sm code:not(.vp-width) span:first-of-type:before { content: "sm"; }
+      .md code:not(.vp-width) span:first-of-type:before { content: "md"; }
+      .lg code:not(.vp-width) span:first-of-type:before { content: "lg"; }
+      .xl code:not(.vp-width) span:first-of-type:before { content: "xl"; }
+
+      .tag {
+        top: 10px;
+        right: 10px;
+      }
+
+      .styles {
+        right: 10px;
+        bottom: 10px;
+      }
+
+
+      /* .size
+      // -- */
+
+      .size {
+        width: 100vw;
+        height: 100vh;
+        font-family: Helvetica, sans-serif;
+        font-size: 20vw;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        line-height: 100vh;
+        text-align: center;
+        text-shadow: 0 0 0.325em rgba(0, 0, 0, 0.25);
+        color: #34495e;
+        background: currentColor;
+      }
+
+      .size:before {
+        content: "size.";
+        display: block;
+      }
+
+
+      /* .size Variations
+      // ------------- */
+
+      .xs .size        { color: #e74c3c;      }
+      .xs .size:before { content: "X Small."; }
+
+      .sm .size        { color: #e67e22;      }
+      .sm .size:before { content: "Small.";   }
+
+      .md .size        { color: #f1c40f;      }
+      .md .size:before { content: "Medium.";  }
+
+      .lg .size        { color: #2ecc71;      }
+      .lg .size:before { content: "Large.";   }
+
+      .xl .size        { color: #3498db;      }
+      .xl .size:before { content: "X Large."; }
+
+    </style>
+    <script src="cubit.js" data-cubit='
+      {
+        "xl" : "(min-width: 1401px)",
+        "lg" : "(min-width: 1001px) and (max-width: 1400px)",
+        "md" : "(min-width: 701px) and (max-width: 1000px)",
+        "sm" : "(min-width: 481px) and (max-width: 700px)",
+        "xs" : "(max-width: 480px)"
+      }
+    ' data-cubit-expose-api></script>
+  </head>
+  <body>
+    <code class="tag">&lt;html class="<span></span>"&gt;</code>
+    <code class="styles">.<span></span> .size {<br>&nbsp;&nbsp;background: <span></span>;<br>}</code>
+    <div class="size"></div>
+  </body>
+</html>
