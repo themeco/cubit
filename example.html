@@ -54,17 +54,17 @@
       .lg code { color: #2ecc71; }
       .xl code { color: #3498db; }
 
-      .xs code:not(.vp-width) span:last-of-type:before { content: "#e74c3c"; }
-      .sm code:not(.vp-width) span:last-of-type:before { content: "#e67e22"; }
-      .md code:not(.vp-width) span:last-of-type:before { content: "#f1c40f"; }
-      .lg code:not(.vp-width) span:last-of-type:before { content: "#2ecc71"; }
-      .xl code:not(.vp-width) span:last-of-type:before { content: "#3498db"; }
+      .xs code span:last-of-type:before { content: "#e74c3c"; }
+      .sm code span:last-of-type:before { content: "#e67e22"; }
+      .md code span:last-of-type:before { content: "#f1c40f"; }
+      .lg code span:last-of-type:before { content: "#2ecc71"; }
+      .xl code span:last-of-type:before { content: "#3498db"; }
 
-      .xs code:not(.vp-width) span:first-of-type:before { content: "xs"; }
-      .sm code:not(.vp-width) span:first-of-type:before { content: "sm"; }
-      .md code:not(.vp-width) span:first-of-type:before { content: "md"; }
-      .lg code:not(.vp-width) span:first-of-type:before { content: "lg"; }
-      .xl code:not(.vp-width) span:first-of-type:before { content: "xl"; }
+      .xs code span:first-of-type:before { content: "xs"; }
+      .sm code span:first-of-type:before { content: "sm"; }
+      .md code span:first-of-type:before { content: "md"; }
+      .lg code span:first-of-type:before { content: "lg"; }
+      .xl code span:first-of-type:before { content: "xl"; }
 
       .tag {
         top: 10px;
@@ -89,7 +89,6 @@
         letter-spacing: -0.05em;
         line-height: 100vh;
         text-align: center;
-        text-shadow: 0 0 0.325em rgba(0, 0, 0, 0.25);
         color: #34495e;
         background: currentColor;
       }
@@ -97,6 +96,7 @@
       .size:before {
         content: "size.";
         display: block;
+        color: rgba(0, 0, 0, 0.15);
       }
 
 
