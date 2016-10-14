@@ -7,7 +7,7 @@
 
 ## Resources
 
-- [Blog Post](#) &ndash; For a more in-depth rundown on why we made Cubit.
+- [Blog Post](http://theme.co/blog/cubit-a-more-flexible-media-query/) &ndash; For a more in-depth rundown on why we made Cubit.
 - [Playground](http://theme.co/playground/cubit/) &ndash; Be a kid again, have some fun!
 
 ## Usage
