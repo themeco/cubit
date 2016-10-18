@@ -59,13 +59,13 @@ To this:
 
 Adding the `data-cubit-expose-api` attribute to your `script` tag will expose the `setBreakpoints` function to the `window`. 
 
-```
+```html
 <script src="cubit.js" data-cubit='initial json' data-cubit-expose-api></script>
 ```
 
 Calling `setBreakpoints` with a javascript object formatted similar to the initial JSON will update the breakpoints used to determine when classes switch:
 
-```
+```js
 setBreakpoints({
     xl: "(min-width: 1801px)",
     lg: "(min-width: 1201px) and (max-width: 1800px)",
